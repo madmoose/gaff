@@ -1,0 +1,22 @@
+Gaff is a small debugger framework I made to help me reverse
+engineer Westwood Games' Blade Runner.
+
+It has virtually only been tested with Blade Runner so don't
+expect anything else to work.
+
+The main feature I wanted from Gaff was to enable me to run
+custom code on breakpoints. This has helped me with dumping
+function arguments, tracing program flow, and dump graphics
+frame buffers while the game was running.
+
+Something I really don't expect to work: Programs that create
+child processes. Gaff will probably be confused by that.
+
+I share it in the hope that somebody else might find it useful.
+And because digitall strong-armed me into releasing it...
+
+I compile it with mingw g++. Enable C++11 support and link
+with psapi. Proper build tools might be added if anybody wants
+it.
+
+- madmoose
